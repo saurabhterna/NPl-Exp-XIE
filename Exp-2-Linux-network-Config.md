@@ -71,3 +71,38 @@ To use the Network Administration Tool, you must have root privileges. To start 
     * Add the physical hardware device to the hardware list, if it does not already exist.
     * Configure the hostname and DNS settings.
     * Configure any hosts that cannot be looked up through DNS. 
+
+
+
+
+##### DNS (Domain Name System or Service) 
+
+It a hierarchical decentralized naming system/service that translates domain names into IP addresses on the Internet or a private network and a server that provides such a service is called a DNS server.
+
+Lets learn , how to setup a local DNS using the hosts file (/etc/hosts) in Linux systems for local domain resolution or testing the website before taking live.
+
+For example, you may want to test a website locally with a custom domain name before going live publicly by modifying the /etc/hosts file on your local system to point the domain name to the IP address of the local DNS server you configured.
+
+The /etc/hosts is an operating system file that translate hostnames or domain names to IP addresses. This is useful for testing websites changes or the SSL setup before taking a website publicly live.
+
+` IMP-NOTE `: This method will only work if the hosts have a static IP address. Therefore ensure that you have set static IP addresses for your Linux hosts or nodes running other operating systems.
+
+#### Configure DNS Locally Using /etc/hosts File in Linux
+
+Now open the /etc/hosts file using your editor of choice as follows
+```
+$ sudo vi /etc/hosts // or
+$ sudo gedit /etc/hosts
+```
+Then add the lines below to the end of the file as shown in the screen shot below.
+```
+192.168.56.1   ubuntu.tecmint.lan
+192.168.56.10  centos.tecmint.lan
+```
+Next, test if everything is working well as expected, using the ping command from Host 1, you can ping Host 2 using it domain name like so.
+```
+$ ping -c 4 centos.tecmint.lan 
+OR
+$ ping -c 4 centos
+```
+
