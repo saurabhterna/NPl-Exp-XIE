@@ -1,6 +1,6 @@
 # Expriment No : 1 Study of Networking commands
-                                            Created By: Saurabh Patil
-                                                        9773445201
+                                                 Created By: Saurabh Patil
+                                                              9773445201
 
 ## 1.ifconfig
     # ifconfig
