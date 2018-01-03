@@ -1,3 +1,7 @@
+# Expriment No : 1 Study of Networking commands
+                                            Created By: Saurabh Patil
+                                                        9773445201
+
 # 1.ifconfig
     # ifconfig
 
@@ -64,10 +68,36 @@ nslookup command also use to find out DNS related query. The following examples 
     # route del -net 10.10.10.0/24 gw 192.168.0.1 // delete route
     # route add default gw 192.168.0.1 // add default Gateway
     
-route command also shows and manipulate ip routing table. To see default routing table in Linux, type the following command.
+route command also shows and manipulate ip routing table. 
 
+# 8. HOST Command
+    # host www.google.com
+    www.google.com has address 173.194.38.180
+    www.google.com has address 173.194.38.176
+    www.google.com has address 173.194.38.177
+    www.google.com has address 173.194.38.178
+    www.google.com has address 173.194.38.179
+    www.google.com has IPv6 address 2404:6800:4003:802::1014
+    
+host command to find name to IP or IP to name in IPv4 or IPv6 and also query DNS records.
+Using -t option we can find out DNS Resource Records like CNAME, NS, MX, SOA etc.
 
+    # host -t CNAME www.redhat.com
+www.redhat.com is an alias for wildcard.redhat.com.edgekey.net.
 
+# 9. ARP Command
+
+ARP (Address Resolution Protocol) is useful to view / add the contents of the kernel’s ARP tables. To see default table use the command as.
+
+    # arp -e
+    Address         HWtype  HWaddress           Flags Mask            Iface
+    192.168.50.1    ether   00:50:56:c0:00:08   C                     eth0
+
+# 10. GUI tool system-config-network
+
+Type system-config-network in command prompt to configure network setting and you will get nice Graphical User Interface (GUI) which may also use to configure IP Address, Gateway, DNS etc. as shown below image.
+
+    # system-config-network
 
 
 
