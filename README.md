@@ -41,6 +41,11 @@ traceroute is a network troubleshooting utility which shows number of hops taken
     
 Netstat (Network Statistic) command display connection info, routing table information etc. To displays routing table information use option as -r.
 
+# 5. DIG Command
+    # dig www.tecmint.com
+Dig (domain information groper) query DNS related information like A Record, CNAME, MX Record etc. This command mainly use to troubleshoot DNS related query.
+
+
 
 
 
