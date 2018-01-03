@@ -45,6 +45,32 @@ Netstat (Network Statistic) command display connection info, routing table infor
     # dig www.tecmint.com
 Dig (domain information groper) query DNS related information like A Record, CNAME, MX Record etc. This command mainly use to troubleshoot DNS related query.
 
+Dig command reads the /etc/resolv.conf file and querying the DNS servers listed there. The response from the DNS server is what dig displays.
+###### Let us understand the output of the commands:
+Lines beginning with ; are comments not part of the information.
+* The first line tell us the version of dig (9.8.2) command.
+* Next, dig shows the header of the response it received from the DNS server
+* Next comes the question section, which simply tells us the query, which in this case is a query for the “A” record of yahoo.com. The IN means this is an Internet lookup (in the Internet class).
+* The answer section tells us that yahoo.com has the IP address 72.30.38.140
+* Lastly there are some stats about the query. You can turn off these stats using the +nostats option.
+
+# 6. NSLOOKUP Command
+    # nslookup www.xavierengg.com
+nslookup command also use to find out DNS related query. The following examples shows A Record (IP Address) of xavierengg.com.
+
+# 7. ROUTE Command
+    # route
+    # route add -net 10.10.10.0/24 gw 192.168.0.1 // add route
+    # route del -net 10.10.10.0/24 gw 192.168.0.1 // delete route
+    # route add default gw 192.168.0.1 // add default Gateway
+    
+route command also shows and manipulate ip routing table. To see default routing table in Linux, type the following command.
+
+
+
+
+
+
 
 
 
