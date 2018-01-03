@@ -57,3 +57,10 @@ BOOTPROTO=dhcp
 ONBOOT=yes
 TYPE="Ethernet"
 ```
+
+Again ` restart network service. ` Always ensure service is restarted to get update made in file.
+
+## Network Configuration uding GUI. 
+To use the Network Administration Tool, you must have root privileges. To start the application, go to the Applications (the main menu on the panel) => System Settings => Network, or type the command system-config-network at a shell prompt.
+
+![](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/System_Administration_Guide/images/neat.png)
