@@ -2,7 +2,7 @@
                                                  Created By: Saurabh Patil
                                                               9773445201
 
-
+##### To-do- List: 
 * 1. Configuring NIC’s IP Address.
 * 2. Determining IP Address and MAC Address using ifconfig command.
 * 3. Changing IP address using ifconfig.
@@ -64,3 +64,10 @@ Again ` restart network service. ` Always ensure service is restarted to get upd
 To use the Network Administration Tool, you must have root privileges. To start the application, go to the Applications (the main menu on the panel) => System Settings => Network, or type the command system-config-network at a shell prompt.
 
 ![](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/System_Administration_Guide/images/neat.png)
+
+ To configure a network connection with the Network Administration Tool, perform the following steps:
+
+   * Add a network device associated with the physical hardware device.
+    * Add the physical hardware device to the hardware list, if it does not already exist.
+    * Configure the hostname and DNS settings.
+    * Configure any hosts that cannot be looked up through DNS. 
