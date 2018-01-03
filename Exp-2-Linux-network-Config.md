@@ -25,10 +25,6 @@
 
 ##### How do i Configure Static IP Address Internet Protocol (IPv4)
 
-To configure static IP Address, you need to update or edit network configuration file to assign an Static IP Address to a system. 
-
-- For RHEL/CentOS/Fedora
-
 Open and edit network configuration file for (eth0 or eth1) using your favorite editor. For example, to assigning IP Address to eth0 interface as follows.
 ```
 [root@ ~]# vi /etc/sysconfig/network-scripts/ifcfg-eth0 // or
@@ -52,4 +48,12 @@ Next, restart network services after entering all the details using the followin
 ```
 [root@ ~]# service network restart
 ```
+For DHCP Configuration update  ` ifcgf-eth0 ` file, by setting paratmeter to ` BOOTPROTO=dhcp `
 
+Sample output:
+```
+DEVICE="eth0"
+BOOTPROTO=dhcp
+ONBOOT=yes
+TYPE="Ethernet"
+```
